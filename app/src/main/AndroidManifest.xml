@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="memecom.edwardnaftaly.imarisha2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Leader.Login_leader"
+            android:label="Login Leader" />
+        <activity
+            android:name=".Leader.Register_leader"
+            android:label="Register Leader" />
+        <activity
+            android:name=".Health.Login_health"
+            android:label="Login Health" />
+        <activity
+            android:name=".Health.Register_health"
+            android:label="Register Health" />
+        <activity
+            android:name=".Health.Healthworker_report"
+            android:label="Health worker Report" />
+        <activity
+            android:name=".Leader.Report_case"
+            android:label="Leader worker Report" />
+        <activity
+            android:name=".Leader.Reportcase_page"
+            android:label="Leader Report case" />
+        <activity android:name=".Health.Health_Report_case"></activity>
+    </application>
+
+</manifest>

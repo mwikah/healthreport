@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Imarisha2</string>
+    <string name="prompt_email">email</string>
+    <string name="action_sign_in_short">Sign in</string>
+</resources>
