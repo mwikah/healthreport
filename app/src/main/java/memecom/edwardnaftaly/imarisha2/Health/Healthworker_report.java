@@ -6,11 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import memecom.edwardnaftaly.imarisha2.Defaultmrrport;
 import memecom.edwardnaftaly.imarisha2.Leader.Report_case;
+import memecom.edwardnaftaly.imarisha2.LhwReport;
 import memecom.edwardnaftaly.imarisha2.R;
 
 public class Healthworker_report extends AppCompatActivity {
-    ImageView ireport;
+    ImageView ireport,hdefaultm,ilhwreport;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,6 +22,24 @@ public class Healthworker_report extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Healthworker_report.this,Report_case.class);
+                startActivity(i);
+            }
+        });
+
+        hdefaultm = findViewById(R.id.defaultm);
+        hdefaultm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Healthworker_report.this,Defaultmrrport.class);
+                startActivity(i);
+            }
+        });
+
+        ilhwreport = findViewById(R.id.lhwreport);
+        ilhwreport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(Healthworker_report.this,LhwReport.class);
                 startActivity(i);
             }
         });
